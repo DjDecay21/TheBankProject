@@ -12,8 +12,8 @@ using TheBankProject.Entities;
 namespace TheBankProject.Migrations
 {
     [DbContext(typeof(BankDbContext))]
-    [Migration("20240318223529_init")]
-    partial class init
+    [Migration("20240319090527_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,17 +67,15 @@ namespace TheBankProject.Migrations
                     b.Property<int>("FromAccountId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
+                    b.Property<string>("IncomingOutgoing")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ToAccountId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Value")

@@ -47,6 +47,7 @@ namespace TheBankProject.Entities
                 .WithMany()
                 .HasForeignKey(t => t.ToAccountId)
                 .OnDelete(DeleteBehavior.NoAction);
+
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

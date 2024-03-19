@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ibztharh1Z1bZcr9HsF/lRBleC9OQvXKvMAewHJ90P/4wmaSb3z3K5PpFFCGmVi2r2uDCpgyDkofhEKDzYugbg==",
+  "dgSpecHash": "MnodPqzjOGDPw4CYbS5x95yFD8fz6Bch3Bbee9numUKHXCerpjiH0KmFjqsX2c4133G8Xz2B1+h2ZGPfSMFw4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\TheBankProject\\TheBankProject\\TheBankProject.csproj",
+  "projectFilePath": "C:\\Users\\mrych\\Documents\\GitHub\\TheBankProject\\TheBankProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrych\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mrych\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
