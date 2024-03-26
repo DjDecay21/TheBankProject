@@ -1,4 +1,8 @@
 
+using AutoMapper;
+using System.Reflection;
+using TheBankProject.Entities;
+
 namespace TheBankProject
 {
     public class Program
@@ -8,7 +12,8 @@ namespace TheBankProject
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddDbContext<BankDbContext>();
+            builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

@@ -12,7 +12,7 @@ using TheBankProject.Entities;
 namespace TheBankProject.Migrations
 {
     [DbContext(typeof(BankDbContext))]
-    [Migration("20240319090527_Init")]
+    [Migration("20240326091917_Init")]
     partial class Init
     {
         /// <inheritdoc />
