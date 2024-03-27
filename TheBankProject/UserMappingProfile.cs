@@ -15,6 +15,8 @@ namespace TheBankProject
             CreateMap<Transaction, TransactionDto>();
 
             CreateMap<AddUserDto, User>();
+            CreateMap<AddAccountDto, Account>();
+            CreateMap<TransferDto, Transaction>();
         }
     }
 }

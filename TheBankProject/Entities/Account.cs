@@ -8,6 +8,14 @@
         public int UserId { get; set; }
         public virtual User User { get; set; }
 
+        public Account() { 
+            NumberAccount = GenerateNumberAccount();
+        }
+        private string GenerateNumberAccount()
+        {
+            Guid accountNumber = Guid.NewGuid();
+            return accountNumber.ToString();
+        }
 
     }
 }
